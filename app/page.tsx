@@ -1,4 +1,4 @@
-import Banner from "@/components/ui/banner";
+
 import Hero from "@/components/ui/hero";
 import Popular from "@/components/ui/popular";
 

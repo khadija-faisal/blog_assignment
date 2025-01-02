@@ -1,7 +1,7 @@
 import blogPostData from "@/app/data/data2";
 import Post from "@/components/ui/post";
 import { notFound } from "next/navigation";
-import { useState } from "react";
+
 export default async function Page({
   params,
 }: {
@@ -23,7 +23,7 @@ export default async function Page({
         description={post.description}
         description2={post.description2}
       />
-      {/* Comment section */}
+ 
     </div>
   );
 }

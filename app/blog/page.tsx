@@ -21,9 +21,8 @@ const BlogPage = () => {
       <div className="grid grid-cols-1 py-10  sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {blogData.map((card, index) => {
           return (
-            <div onClick={() => Router.push(`/blog/${index + 1}`)}>
+            <div key={index} onClick={() => Router.push(`/blog/${index + 1}`)}>
               <Card
-                key={index}
                 image={card.image}
                 catogeries={card.catogeries}
                 title={card.title}
